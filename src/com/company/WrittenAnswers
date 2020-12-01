@@ -1,0 +1,23 @@
+/*
+Trang Hoang
+CS111B - Assignment 6B
+ */
+
+1. polymorphism examples:
+    private GridItem items[];
+    items = new GridItem[INITIAL_CAPACITY];
+    public void add(GridItem item) {
+    GridItem temp[] = new GridItem[items.length * 2];
+    public class MyCircle extends GridItem {
+    public class MyRectangle extends GridItem {
+
+2. x and y are inherited from GridItem class as protected instance variables.
+
+3. The respective containsPoint methods of MyCircle and MyRectangle overrode the containsPoint method of GridItem.
+
+4. Since GridItem's containsPoint is never instantiated separately and is overridden from the inherited classes, it
+could have been an abstract method to make the code cleaner. The constructor for MySquare could have inherited from
+MyRectangle.
+
+5. Since getArea and containsPoint are methods required for each type of shape, they could have been included in an
+Interface to force methods to be written to ensure that each inherited class would incorporate them.
