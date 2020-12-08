@@ -1,5 +1,10 @@
 package com.company;
 
+/*
+Trang Hoang
+CS111B - Assignments 6B & 7A
+ */
+
 public class GridWriter {
 
     private GridItem items[];
@@ -80,7 +85,7 @@ public class GridWriter {
 
     /****
      * This is a private helper method that doubles the array capacity of the grid writer
-     * This allows it to accomodate a dynamic number of grid item objects
+     * This allows it to accommodate a dynamic number of grid item objects
      **/
     private void doubleItemCapacity() {
 
@@ -95,5 +100,27 @@ public class GridWriter {
         // point the items array at the temp array.
         // The old array will be garbage collected
         items = temp;
+    }
+
+    /**
+     * The size method returns the number of GridItems stored in the GridWriter.
+     * @return size
+     */
+
+    public int size() {
+        return size;
+    }
+
+    /**
+     * The get method returns the stored GridItem at the index provided.
+     * @param index location in items array
+     * @return GridItem at the specified index
+     */
+    public GridItem get(int index) throws IndexOutOfBoundsException {
+        if (index >= size) {
+            throw new IndexOutOfBoundsException("The index is invalid.");
+        } else {
+            return items[index];
+        }
     }
 }

@@ -1,22 +1,39 @@
 package com.company;
 
+/*
+Trang Hoang
+CS111B - Assignments 6B & 7A
+ */
+
 public class GridWriterProgram {
 
     public static void main(String[] args) {
+//        GridWriter gw = new GridWriter(40, 50);
+//
+//        gw.add(new MyCircle(10, 10, 9));
+//        gw.add(new MyCircle(25, 20, 12));
+//        gw.add(new MyCircle(25, 20, 5));
+//
+//        gw.add(new MyRectangle(25, 25, 20, 15));
+//        gw.add(new MyRectangle(5, 5, 3, 4));
+//        gw.add(new MyRectangle(40, 0, 10, 10));
+//
+//        gw.add(new MySquare(5, 25, 3));
+//        gw.add(new MySquare(10, 30, 7));
+//
+//        gw.display();
+
+
         GridWriter gw = new GridWriter(40, 50);
 
         gw.add(new MyCircle(10, 10, 9));
-        gw.add(new MyCircle(25, 20, 12));
-        gw.add(new MyCircle(25, 20, 5));
-
-        gw.add(new MyRectangle(25, 25, 20, 15));
-        gw.add(new MyRectangle(5, 5, 3, 4));
         gw.add(new MyRectangle(40, 0, 10, 10));
 
-        gw.add(new MySquare(5, 25, 3));
-        gw.add(new MySquare(10, 30, 7));
+        for (int i = 0; i < gw.size(); i++) {
+            System.out.println(gw.get(i).getArea());
+        }
 
-        gw.display();
+        GridItem i = gw.get(2);
     }
 }
 
@@ -61,4 +78,15 @@ public class GridWriterProgram {
  . . . . . . 1 1 1 1 1 1 1 1 1 . . . . . . . . . . . . . . . . . . . . . . . . . 1 1 1 1 1 1 1 1 1 1 1
  . . . . . . . . . . 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1 1 1 1 1 1 1 1 1 1 1
  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1 1 1 1 1 1 1 1 1 1 1
+ */
+
+
+/*
+254.46900494077323
+100.0
+Exception in thread "main" java.lang.IndexOutOfBoundsException: The index is invalid.
+	at com.company.GridWriter.get(GridWriter.java:121)
+	at com.company.GridWriterProgram.main(GridWriterProgram.java:36)
+
+Process finished with exit code 1
  */

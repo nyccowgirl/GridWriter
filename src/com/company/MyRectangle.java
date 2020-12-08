@@ -1,5 +1,10 @@
 package com.company;
 
+/*
+Trang Hoang
+CS111B - Assignments 6B
+ */
+
 public class MyRectangle extends GridItem {
 
     private int height;

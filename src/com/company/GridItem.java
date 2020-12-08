@@ -1,5 +1,9 @@
 package com.company;
 
+/*
+Trang Hoang
+CS111B - Assignments 6B
+ */
 
 public class GridItem {
     protected int x;
